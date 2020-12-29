@@ -18,7 +18,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h2 class="text-center bg-dark text-white mt-4">CRUD OPERATION WITH CODE-IGNITER</h2>
     </div>
     <div class="container mt-5">
-        <a href="<?php echo base_url().'Register/';?>" class="btn btn-primary float-right mb-2"><i class="fa fa-eye"></i> USERS</a>
+        <a href="<?php echo site_url('Register/');?>" class="btn btn-primary float-right mb-2"><i class="fa fa-eye"></i> USERS</a>
         <div class="row">
             <div class="col-md-3"></div>
             <div class="col-md-6">

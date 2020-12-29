@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         <h2 class="text-center bg-info">ALL USERS</h2>
     </div>
     <div class="container mt-5">
-        <a href="<?php echo base_url().'Register/registerForm'?>" class="btn btn-warning mb-2"><i class='fas fa-plus'></i> USERS</a>
+        <a href="<?php echo site_url('Register/registerForm');?>" class="btn btn-warning mb-2"><i class='fas fa-plus'></i> USERS</a>
         <table class="table table-striped table-bordered">
             <thead class="text-center bg-dark text-white">
                 <tr>
@@ -41,14 +41,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <td><?php echo $row['age'];?></td>
                     <td><?php echo $row['mobile'];?></td>
                     <td><?php echo $row['email'];?></td>
-                    <td><a href="<?php echo  base_url().'Register/edit/'.$row['id']?>" class="btn btn-outline-primary ml-2 mr-2"><i class='fas fa-edit'></i></a><a href="<?php echo  base_url().'Register/delete/'.$row['id']?>" onclick="javascript:return confirm('Are You Sure You Want To Delete?');" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
+                    <td><a href="<?php echo site_url('Register/edit/').$row['id']?>" class="btn btn-outline-primary ml-2 mr-2"><i class='fas fa-edit'></i></a><a href="<?php echo  site_url('Register/delete/').$row['id']?>" onclick="javascript:return confirm('Are You Sure You Want To Delete?');" class="btn btn-outline-danger"><i class="fa fa-trash"></i></a></td>
                 </tr>
                 <?php
                     }
                 } else {           
                 ?>
                 <tr>
-                    <td colspan="6">No Data Found!</td>
+                    <td colspan="6">No Record Found !</td>
                 </tr>
                 <?php } ?>
             </tbody>

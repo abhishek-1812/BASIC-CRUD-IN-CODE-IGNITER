@@ -51,7 +51,7 @@ class Register extends CI_Controller
 
             $this->session->set_flashdata('success', 'Record Inserted Successfully');
 
-            redirect(base_url().'Register/registerForm');
+            redirect(site_url('Register/registerForm'));
         }
     }
    
@@ -81,7 +81,7 @@ class Register extends CI_Controller
 
             $this->session->set_flashdata('success', 'Record Inserted Successfully');
 
-            redirect(base_url().'Register/');
+            redirect(site_url('Register/'));
         }
     }
     public function delete($id) 
@@ -92,13 +92,13 @@ class Register extends CI_Controller
         if (empty($record)) {
 
             $this->session->set_flashdata('failure', 'Record Not Found');
-            redirect(base_url().'Register/');
+            redirect(site_url('Register/'));
 
         }
         $this->Usermodel->deleteUser($id);
         $this->session->set_flashdata('success', 'Record Inserted Successfully');
 
-        redirect(base_url().'Register/');
+        redirect(site_url('Register/'));
         //redirect(base_url().'Register/index.php');
     }
 }

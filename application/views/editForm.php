@@ -19,7 +19,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="container mt-5">
         <div class="row">
             <div class="col-md-3"></div>
-            <div class="col-md-6">
+            <div class="col-md-6"> 
                 <h3 class="mb-4">Edit Your Details</h3>
                 <form class="form-group" method="POST" name="insertion" action="<?php //echo $_SERVER['REQUEST_URI'];?>">
                     <input type="text" class="form-control mb-3" value="<?php echo set_value('name', $result['name']);?>" name="name"><?php //echo form_error('name');?>
@@ -27,7 +27,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <input type="text" class="form-control mb-3" value="<?php echo set_value('mobile', $result['mobile']);?>" name="mobile"><?php //echo form_error('mobile');?>
                     <input type="email" class="form-control mb-4" value="<?php echo set_value('email', $result['email']);?>" name="email"><?php //echo form_error('email');?>
                     <p><input type="submit" class="btn btn-success btn-block" name="submit" value="UPDATE"></p>
-                    <p><a href="<?php echo base_url().'Register/';?>" class="btn btn-danger btn-block">CANCEL</a></p>
+                    <p><a href="<?php echo site_url('Register/');?>" class="btn btn-danger btn-block">CANCEL</a></p>
                 </form>
             </div>
         </div>
